@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="dist/bundle.js"></script>
+    </head>
+    <body>
+        <!-- https://github.com/LinusU/secure-remote-password -->
+        <section id="reg">
+            <h1>REGISTRATION</h1>
+            Username: <input id="reg-username" type="text" /><br />
+            Password: <input id="reg-password" type="password" /><br />
+            <button id="reg-btn" onclick="app.client.sendRegistration();">Register</button>
+        </section>
+        <hr />
+        <section id="auth">
+            <h1>SIGN IN</h1>
+            Username: <input id="auth-username" type="text" /><br />
+            Password: <input id="auth-password" type="password" /><br />
+            <button id="reg-btn" onclick="app.client.sendSignIn();">Sign In</button>
+        </section>
+    </body>
+</html>
